@@ -1,11 +1,11 @@
 {
-  "name": "@sully/player-icon",
+  "name": "@sully_al/player-icon",
   "version": "0.0.1",
   "repository": "https://github.com/sullyAL/media-icons",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm publish",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
   },
