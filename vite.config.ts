@@ -9,10 +9,14 @@ export default defineConfig({
     }
   })],
   build: {
-    outDir: 'dist',
-    emptyOutDir: true,
+    lib: {
+      entry: 'src/main.ts',
+      name: 'PlayerIcon',
+      fileName: 'index',
+      formats: ['es'],
+    },
     rollupOptions: {
-      input: 'src/main.ts',
-    }
+      external: [], // Optional: Add deps here if needed
+    },
   }
 })
