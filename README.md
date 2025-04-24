@@ -7,7 +7,7 @@ The `player-icon` is a custom HTML element built using Svelte. It provides a fle
 
 
 ```bash
-npm install player-icon
+npm i @sully_al/player-icon
 ```
 
 ## Usage
