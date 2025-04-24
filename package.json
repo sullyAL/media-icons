@@ -1,11 +1,11 @@
 {
   "name": "@sully_al/player-icon",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": "https://github.com/sullyAL/media-icons",
   "author": "Sully",
   "license": "MIT",
   "type": "module",
-  "main": "dist/assets/index.js",
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
