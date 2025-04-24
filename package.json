@@ -1,6 +1,6 @@
 {
-  "name": "media-icons",
-  "version": "0.0.0",
+  "name": "player-icon",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -24,5 +24,7 @@
     "@hugeicons-pro/core-stroke-standard": "^1.0.14",
     "@hugeicons/core-free-icons": "^1.0.14",
     "@hugeicons/svelte": "^1.0.2"
-  }
+  },
+  "author": "Sully",
+  "license": "MIT"
 }
