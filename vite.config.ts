@@ -9,16 +9,10 @@ export default defineConfig({
     }
   })],
   build: {
-    lib: {
-      entry: 'src/main.ts',
-      formats: ['es'],
-      fileName: 'media-icons',
-    },
+    outDir: 'dist',
+    emptyOutDir: true,
     rollupOptions: {
-      external: [],
-      output: {
-        globals: {},
-      }
+      input: 'src/main.ts',
     }
-  },
+  }
 })

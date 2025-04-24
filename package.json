@@ -1,8 +1,17 @@
 {
   "name": "@sully_al/player-icon",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "https://github.com/sullyAL/media-icons",
+  "author": "Sully",
+  "license": "MIT",
   "type": "module",
+  "main": "dist/assets/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build && npm publish --access public",
@@ -26,6 +35,9 @@
     "@hugeicons/core-free-icons": "^1.0.14",
     "@hugeicons/svelte": "^1.0.2"
   },
-  "author": "Sully",
-  "license": "MIT"
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  }
 }
