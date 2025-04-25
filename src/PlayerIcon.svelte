@@ -17,7 +17,8 @@
         ArrowExpandStrokeRounded,
         ArrowShrinkStrokeRounded,
         TvSmartStrokeRounded,
-        AirplayLineStrokeRounded
+        AirplayLineStrokeRounded,
+        ArrowRight01StrokeRounded
     } from '@hugeicons-pro/core-stroke-rounded'
 
     import {
@@ -35,7 +36,8 @@
         ArrowExpandSolidRounded,
         ArrowShrinkSolidRounded,
         TvSmartSolidRounded,
-        AirplayLineSolidRounded
+        AirplayLineSolidRounded,
+        ArrowRight01SolidRounded
     } from '@hugeicons-pro/core-solid-rounded'
 
     import { IconEnums, type IconSvgObject } from './types'
@@ -58,7 +60,8 @@
         expand: ArrowExpandStrokeRounded,
         shrink: ArrowShrinkStrokeRounded,
         cast: TvSmartStrokeRounded,
-        airplay: AirplayLineStrokeRounded
+        airplay: AirplayLineStrokeRounded,
+        arrowRight: ArrowRight01StrokeRounded
     }
 
     const solidIcons: Record<IconEnums, IconSvgObject> = {
@@ -76,7 +79,8 @@
         expand: ArrowExpandSolidRounded,
         shrink: ArrowShrinkSolidRounded,
         cast: TvSmartSolidRounded,
-        airplay: AirplayLineSolidRounded
+        airplay: AirplayLineSolidRounded,
+        arrowRight: ArrowRight01SolidRounded
     }
 
     $: selectedIcon = type === 'solid' ? solidIcons[icon] : strokeIcons[icon]

@@ -13,7 +13,8 @@ export enum IconEnums {
     EXPAND = 'expand',
     SHRINK = 'shrink',
     CAST = 'cast',
-    AIRPLAY = 'airplay'
+    AIRPLAY = 'airplay',
+    ARROW_RIGHT = 'arrowRight',
 }
 
 export type IconSvgObject = ([string, {
