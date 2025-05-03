@@ -1,0 +1,6 @@
+{
+    "name": "@sully/player-icon",
+    "version": "0.0.6",
+    "license": "MIT",
+    "exports": "./mod.ts"
+}

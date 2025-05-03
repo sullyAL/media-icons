@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Svelte + TS</title>
+    <title>Custom player icons</title>
   </head>
   <body>
     <div class="flex">
@@ -21,10 +21,26 @@
       <player-icon icon="pipOn" class="icon"></player-icon>
       <player-icon icon="pipOff" class="icon"></player-icon>
       <player-icon icon="cast" class="icon"></player-icon>
+      <player-icon icon="castActive" class="icon"></player-icon>
       <player-icon icon="expand" class="icon"></player-icon>
       <player-icon icon="shrink" class="icon"></player-icon>
       <player-icon icon="airplay" class="icon"></player-icon>
     </div>
+
+    <br>
+    <br>
+    <div class="flex">
+      <button data-player="one" onclick="chooseStyle('one')">
+        Player One
+      </button>
+      <button data-player="one" data-type="stroke" onclick="chooseStyle('two', 'stroke')">
+        Player Two Stroke
+      </button>
+      <button data-player="one" data-type="solid" onclick="chooseStyle('two', 'solid')">
+        Player Two Solid
+      </button>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/dev.ts"></script>
   </body>

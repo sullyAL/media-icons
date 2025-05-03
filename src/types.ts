@@ -15,6 +15,7 @@ export enum IconEnums {
     CAST = 'cast',
     AIRPLAY = 'airplay',
     ARROW_RIGHT = 'arrowRight',
+    CAST_ACTIVE = 'castActive'
 }
 
 export type IconSvgObject = ([string, {

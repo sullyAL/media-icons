@@ -41,9 +41,50 @@
     } from '@hugeicons-pro/core-solid-rounded'
 
     import { IconEnums, type IconSvgObject } from './types'
+    import {
+        RewindIcon,
+        AirplayIcon,
+        ForwardIcon,
+        PlayIcon,
+        PauseIcon,
+        MuteVolumeIcon,
+        LowVolumeIcon,
+        HighVolumeIcon,
+        ExpandIcon,
+        SettingsIcon,
+        PipOffIcon,
+        PipOnIcon,
+        CaptionIcon,
+        CastActiveIcon,
+        CastIcon,
+        ArrowRightIcon,
+        ShrinkIcon
+    } from './icons/playerOne'
 
     export let icon: IconEnums = IconEnums.PLAY
     export let type: 'stroke' | 'solid' = 'stroke'
+
+    export let player: 'one' | 'two' = 'two'
+
+    const playerOneIcons: Record<IconEnums, IconSvgObject> = {
+        play: PlayIcon,
+        pause: PauseIcon,
+        forward: ForwardIcon,
+        rewind: RewindIcon,
+        mute: MuteVolumeIcon,
+        low: LowVolumeIcon,
+        high: HighVolumeIcon,
+        cc: CaptionIcon,
+        settings: SettingsIcon,
+        pipOn: PipOnIcon,
+        pipOff: PipOffIcon,
+        expand: ExpandIcon,
+        shrink: ShrinkIcon,
+        cast: CastIcon,
+        castActive: CastActiveIcon,
+        airplay: AirplayIcon,
+        arrowRight: ArrowRightIcon
+    }
 
     const strokeIcons: Record<IconEnums, IconSvgObject> = {
         play: PlayStrokeRounded,
@@ -60,6 +101,7 @@
         expand: ArrowExpandStrokeRounded,
         shrink: ArrowShrinkStrokeRounded,
         cast: TvSmartStrokeRounded,
+        castActive: TvSmartStrokeRounded,
         airplay: AirplayLineStrokeRounded,
         arrowRight: ArrowRight01StrokeRounded
     }
@@ -79,14 +121,15 @@
         expand: ArrowExpandSolidRounded,
         shrink: ArrowShrinkSolidRounded,
         cast: TvSmartSolidRounded,
+        castActive: TvSmartSolidRounded,
         airplay: AirplayLineSolidRounded,
         arrowRight: ArrowRight01SolidRounded
     }
 
-    $: selectedIcon = type === 'solid' ? solidIcons[icon] : strokeIcons[icon]
+    $: selectedIcon = player === 'one' ? playerOneIcons[icon] : type === 'solid' ? solidIcons[icon] : strokeIcons[icon]
 </script>
 
-{#key `${icon}_${type}`}
+{#key `${player}_${icon}_${type}`}
     <HugeiconsIcon
             icon={selectedIcon}
             className="icon"
